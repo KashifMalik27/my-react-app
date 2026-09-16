@@ -294,3 +294,58 @@ code {
     border-right-color: var(--border);
   }
 }
+
+/* Single-screen home page */
+:root {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #f8f4ec;
+  background: #182a25;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+}
+
+#app,
+.home,
+.hero-section {
+  min-height: 100svh;
+}
+
+#app {
+  width: 100%;
+  max-width: none;
+  border: 0;
+}
+
+.hero-section {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  padding: 32px;
+  text-align: center;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(220, 164, 91, 0.18), transparent 30%),
+    linear-gradient(135deg, #182a25 0%, #25463c 55%, #1a312c 100%);
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: #e4b875;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+h1 {
+  margin: 0;
+  color: #f8f4ec;
+  font-size: clamp(48px, 10vw, 112px);
+  font-weight: 400;
+  line-height: 0.95;
+}
