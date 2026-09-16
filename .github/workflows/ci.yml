@@ -28,7 +28,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment: production
+    environment: productions
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
